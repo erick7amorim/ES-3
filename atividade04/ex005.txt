@@ -1,0 +1,56 @@
+class Funcionario {
+    private String nome;
+    private int idade;
+
+    // Composição para lidar com salário fixo
+    private SalarioFixo salarioFixo;
+
+    // Composição para lidar com horas trabalhadas
+    private PorHora porHora;
+
+    // Composição para lidar com comissões
+    private Comissao comissao;
+
+    public Funcionario(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.salarioFixo = new SalarioFixo();
+        this.porHora = new PorHora();
+        this.comissao = new Comissao();
+    }
+
+    // Métodos para acessar comportamentos específicos
+    public double calcularSalario() {
+        return salarioFixo.calcularSalario() + porHora.calcularSalario() + comissao.calcularSalario();
+    }
+
+}
+
+// Classes separadas para comportamentos específicos
+class SalarioFixo {
+    private double salarioMensal;
+
+    // Métodos específicos para funcionários assalariados
+    public double calcularSalario() {
+        return salarioMensal;
+    }
+}
+
+class PorHora {
+    private int horasTrabalhadas;
+    private double taxaPorHora;
+
+    // Métodos específicos para funcionários por hora
+    public double calcularSalario() {
+        return horasTrabalhadas * taxaPorHora;
+    }
+}
+
+class Comissao {
+    private double valorComissao;
+
+    // Métodos específicos para funcionários com comissão
+    public double calcularSalario() {
+        return valorComissao;
+    }
+}
