@@ -1,0 +1,21 @@
+Vamos supor que em uma empresa exista a classe Funcionário (Base) e as classes FuncionarioAssalariado e FuncionarioPorHora que estendem 
+a classe Funcionário.
+
+class Funcionario {
+    private String nome;
+    private int idade;
+}
+
+class FuncionarioAssalariado extends Funcionario {
+    private double salarioMensal;
+}
+
+class FuncionarioPorHora extends Funcionario {
+    private int horasTrabalhadas;
+    private double taxaPorHora;
+}
+
+
+Agora imagine que, no futuro, a empresa introduza uma nova categoria de funcionários, como FuncionarioComissao, 
+que é pago com base em comissões de vendas. Se optarmos por estender a hierarquia de classes, poder ter o problema de 
+como representar funcionários que são assalariados e recebem comissões. A herança pode começar a se tornar complicada
