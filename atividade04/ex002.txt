@@ -1,0 +1,4 @@
+A principal imagem relacionada ao LSP é a enfatização da importância de uma classe derivada (subtipo) poder ser substituída por sua 
+classe base (tipo) sem comprometer o programa. Por exemplo se temos uma hierarquia de classes, como classe Veículo
+e uma classe Carro que herda de Veículo, a substituição de um objeto do tipo Veículo por um objeto do tipo Carro não deve 
+gerar efeitos colaterais indesejados ou quebras no comportamento esperado do programa.

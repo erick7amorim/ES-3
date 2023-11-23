@@ -1,0 +1,1 @@
+Porque esse princípio foi introduzido por Barbara Liskov 
