@@ -1,1 +1,0 @@
-Coesão está ligado ao princípio da responsabilidade única, diz que uma classe deve ter apenas uma única responsabilidade e realizá-la de maneira satisfatória, ou seja, uma classe não deve assumir responsabilidades que não são suas . 
