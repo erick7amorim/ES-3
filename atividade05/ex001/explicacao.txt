@@ -1,1 +1,0 @@
-A classe ContaPoupanca adiciona uma lógica específica, essa adição de comportamento na subclasse que não está presente na classe injustificando assim o uso da herança
